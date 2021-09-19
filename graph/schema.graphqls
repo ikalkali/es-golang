@@ -1,0 +1,15 @@
+# GraphQL schema example
+#
+# https://gqlgen.com/getting-started/
+
+type Book {
+  id: ID!
+  title: String!
+  author: String!
+  publisher: String!
+  releaseDate: String!
+}
+
+type Query {
+  books: [Book!]!
+}
